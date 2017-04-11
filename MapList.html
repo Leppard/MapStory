@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>Story List</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="map-list.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li>
+                    <form class="navbar-form" method="get" action="/storySearch">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜索案例" name="wd">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="active">
+                    <a href="#">登陆</a>
+                </li>
+                <li>
+                    <a href="#">注册</a>
+                </li>
+            </ul>
+            <h3 class="text-muted">Stories</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h1>案例浏览</h1>
+            <p class="lead"></p>
+            <br>
+            <p><a class="btn btn-lg btn-success" href="MapPage.html" role="button">查看案例</a></p>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="story">
+                <div class="story-image" style="background-image:url(img/001.jpg)">
+                </div>
+                <h3 class="text-center text-uppercase"><a href="MapPage.html">上海市居住区通勤分布互动演示</a></h3>
+                <p class="text-right">2016-12-01</p>
+            </div>
+            <div class="story">
+                <div class="story-image" style="background-image:url(img/002.jpg)">
+                </div>
+                <h3 class="text-center text-uppercase"><a href="CityBCenter.html">上海中心城区商业中心空间特征研究</a></h3>
+                <p class="text-right">2016-12-01</p>
+            </div>
+            <div class="story">
+                <div class="story-image" style="background-image:url(bg/123.jpg)">
+                </div>
+                <h3 class="text-center text-uppercase"><a href="CityHStruct.html">利用手机信令数据测度城镇体系的等级结构</a></h3>
+                <p class="text-right">2016-12-01</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; Leppard</p>
+        </div>
+
+    </div>
+    <!-- /container -->
+</body>
+
+</html>

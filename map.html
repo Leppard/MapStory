@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>上海市居住区通勤分布互动演示</title>
+    <SCRIPT language='JavaScript'>
+        a1 = new Array(107);
+        a2 = new Array(107);
+        
+        a1[0] = './images/36.jpg';
+        a2[0] = './images2/36.jpg';
+        a1[1] = './images/52.jpg';
+        a2[1] = './images2/52.jpg';
+        a1[2] = './images/72.jpg';
+        a2[2] = './images2/72.jpg';
+        a1[3] = './images/81.jpg';
+        a2[3] = './images2/81.jpg';
+        a1[4] = './images/222.jpg';
+        a2[4] = './images2/222.jpg';
+        a1[5] = './images/254.jpg';
+        a2[5] = './images2/254.jpg';
+        a1[6] = './images/266.jpg';
+        a2[6] = './images2/266.jpg';
+        a1[7] = './images/274.jpg';
+        a2[7] = './images2/274.jpg';
+        a1[8] = './images/283.jpg';
+        a2[8] = './images2/283.jpg';
+        a1[9] = './images/288.jpg';
+        a2[9] = './images2/288.jpg';
+        a1[10] = './images/301.jpg';
+        a2[10] = './images2/301.jpg';
+        a1[11] = './images/384.jpg';
+        a2[11] = './images2/384.jpg';
+        a1[12] = './images/462.jpg';
+        a2[12] = './images2/462.jpg';
+        a1[13] = './images/465.jpg';
+        a2[13] = './images2/465.jpg';
+        a1[14] = './images/561.jpg';
+        a2[14] = './images2/561.jpg';
+        a1[15] = './images/587.jpg';
+        a2[15] = './images2/587.jpg';
+        a1[16] = './images/618.jpg';
+        a2[16] = './images2/618.jpg';
+        a1[17] = './images/621.jpg';
+        a2[17] = './images2/621.jpg';
+        a1[18] = './images/629.jpg';
+        a2[18] = './images2/629.jpg';
+        a1[19] = './images/635.jpg';
+        a2[19] = './images2/635.jpg';
+        a1[20] = './images/690.jpg';
+        a2[20] = './images2/690.jpg';
+        a1[21] = './images/864.jpg';
+        a2[21] = './images2/864.jpg';
+        a1[22] = './images/880.jpg';
+        a2[22] = './images2/880.jpg';
+        a1[23] = './images/885.jpg';
+        a2[23] = './images2/885.jpg';
+        a1[24] = './images/975.jpg';
+        a2[24] = './images2/975.jpg';
+        a1[25] = './images/1012.jpg';
+        a2[25] = './images2/1012.jpg';
+        a1[26] = './images/1080.jpg';
+        a2[26] = './images2/1080.jpg';
+        a1[27] = './images/1093.jpg';
+        a2[27] = './images2/1093.jpg';
+        a1[28] = './images/1097.jpg';
+        a2[28] = './images2/1097.jpg';
+        a1[29] = './images/1102.jpg';
+        a2[29] = './images2/1102.jpg';
+        a1[30] = './images/1116.jpg';
+        a2[30] = './images2/1116.jpg';
+        a1[31] = './images/1126.jpg';
+        a2[31] = './images2/1126.jpg';
+        a1[32] = './images/1193.jpg';
+        a2[32] = './images2/1193.jpg';
+        a1[33] = './images/1204.jpg';
+        a2[33] = './images2/1204.jpg';
+        a1[34] = './images/1293.jpg';
+        a2[34] = './images2/1293.jpg';
+        a1[35] = './images/1367.jpg';
+        a2[35] = './images2/1367.jpg';
+        a1[36] = './images/1489.jpg';
+        a2[36] = './images2/1489.jpg';
+        a1[37] = './images/1501.jpg';
+        a2[37] = './images2/1501.jpg';
+        a1[38] = './images/1530.jpg';
+        a2[38] = './images2/1530.jpg';
+        a1[39] = './images/1532.jpg';
+        a2[39] = './images2/1532.jpg';
+        a1[40] = './images/1560.jpg';
+        a2[40] = './images2/1560.jpg';
+        a1[41] = './images/1568.jpg';
+        a2[41] = './images2/1568.jpg';
+        a1[42] = './images/1592.jpg';
+        a2[42] = './images2/1592.jpg';
+        a1[43] = './images/1631.jpg';
+        a2[43] = './images2/1631.jpg';
+        a1[44] = './images/1648.jpg';
+        a2[44] = './images2/1648.jpg';
+        a1[45] = './images/1682.jpg';
+        a2[45] = './images2/1682.jpg';
+        a1[46] = './images/1839.jpg';
+        a2[46] = './images2/1839.jpg';
+        a1[47] = './images/1897.jpg';
+        a2[47] = './images2/1897.jpg';
+        a1[48] = './images/1898.jpg';
+        a2[48] = './images2/1898.jpg';
+        a1[49] = './images/1918.jpg';
+        a2[49] = './images2/1918.jpg';
+        a1[50] = './images/1941.jpg';
+        a2[50] = './images2/1941.jpg';
+        a1[51] = './images/1962.jpg';
+        a2[51] = './images2/1962.jpg';
+        a1[52] = './images/2065.jpg';
+        a2[52] = './images2/2065.jpg';
+        a1[53] = './images/2078.jpg';
+        a2[53] = './images2/2078.jpg';
+        a1[54] = './images/2102.jpg';
+        a2[54] = './images2/2102.jpg';
+        a1[55] = './images/2152.jpg';
+        a2[55] = './images2/2152.jpg';
+        a1[56] = './images/2220.jpg';
+        a2[56] = './images2/2220.jpg';
+        a1[57] = './images/2239.jpg';
+        a2[57] = './images2/2239.jpg';
+        a1[58] = './images/2248.jpg';
+        a2[58] = './images2/2248.jpg';
+        a1[59] = './images/2260.jpg';
+        a2[59] = './images2/2260.jpg';
+        a1[60] = './images/2287.jpg';
+        a2[60] = './images2/2287.jpg';
+        a1[61] = './images/2294.jpg';
+        a2[61] = './images2/2294.jpg';
+        a1[62] = './images/2298.jpg';
+        a2[62] = './images2/2298.jpg';
+        a1[63] = './images/2359.jpg';
+        a2[63] = './images2/2359.jpg';
+        a1[64] = './images/2385.jpg';
+        a2[64] = './images2/2385.jpg';
+        a1[65] = './images/2451.jpg';
+        a2[65] = './images2/2451.jpg';
+        a1[66] = './images/2453.jpg';
+        a2[66] = './images2/2453.jpg';
+        a1[67] = './images/2467.jpg';
+        a2[67] = './images2/2467.jpg';
+        a1[68] = './images/2476.jpg';
+        a2[68] = './images2/2476.jpg';
+        a1[69] = './images/2505.jpg';
+        a2[69] = './images2/2505.jpg';
+        a1[70] = './images/2510.jpg';
+        a2[70] = './images2/2510.jpg';
+        a1[71] = './images/2534.jpg';
+        a2[71] = './images2/2534.jpg';
+        a1[72] = './images/2595.jpg';
+        a2[72] = './images2/2595.jpg';
+        a1[73] = './images/2632.jpg';
+        a2[73] = './images2/2632.jpg';
+        a1[74] = './images/2691.jpg';
+        a2[74] = './images2/2691.jpg';
+        a1[75] = './images/2708.jpg';
+        a2[75] = './images2/2708.jpg';
+        a1[76] = './images/2716.jpg';
+        a2[76] = './images2/2716.jpg';
+        a1[77] = './images/2722.jpg';
+        a2[77] = './images2/2722.jpg';
+        a1[78] = './images/2777.jpg';
+        a2[78] = './images2/2777.jpg';
+        a1[79] = './images/3011.jpg';
+        a2[79] = './images2/3011.jpg';
+        a1[80] = './images/3022.jpg';
+        a2[80] = './images2/3022.jpg';
+        a1[81] = './images/3096.jpg';
+        a2[81] = './images2/3096.jpg';
+        a1[82] = './images/3099.jpg';
+        a2[82] = './images2/3099.jpg';
+        a1[83] = './images/3140.jpg';
+        a2[83] = './images2/3140.jpg';
+        a1[84] = './images/3192.jpg';
+        a2[84] = './images2/3192.jpg';
+        a1[85] = './images/3200.jpg';
+        a2[85] = './images2/3200.jpg';
+        a1[86] = './images/3244.jpg';
+        a2[86] = './images2/3244.jpg';
+        a1[87] = './images/3297.jpg';
+        a2[87] = './images2/3297.jpg';
+        a1[88] = './images/3317.jpg';
+        a2[88] = './images2/3317.jpg';
+        a1[89] = './images/3323.jpg';
+        a2[89] = './images2/3323.jpg';
+        a1[90] = './images/3338.jpg';
+        a2[90] = './images2/3338.jpg';
+        a1[91] = './images/3346.jpg';
+        a2[91] = './images2/3346.jpg';
+        a1[92] = './images/3348.jpg';
+        a2[92] = './images2/3348.jpg';
+        a1[93] = './images/3400.jpg';
+        a2[93] = './images2/3400.jpg';
+        a1[94] = './images/3437.jpg';
+        a2[94] = './images2/3437.jpg';
+        a1[95] = './images/3581.jpg';
+        a2[95] = './images2/3581.jpg';
+        a1[96] = './images/3590.jpg';
+        a2[96] = './images2/3590.jpg';
+        a1[97] = './images/3626.jpg';
+        a2[97] = './images2/3626.jpg';
+        a1[98] = './images/3668.jpg';
+        a2[98] = './images2/3668.jpg';
+        a1[99] = './images/3679.jpg';
+        a2[99] = './images2/3679.jpg';
+        a1[100] = './images/3713.jpg';
+        a2[100] = './images2/3713.jpg';
+        a1[101] = './images/3715.jpg';
+        a2[101] = './images2/3715.jpg';
+        a1[102] = './images/3780.jpg';
+        a2[102] = './images2/3780.jpg';
+        a1[103] = './images/4014.jpg';
+        a2[103] = './images2/4014.jpg';
+        a1[104] = './images/4023.jpg';
+        a2[104] = './images2/4023.jpg';
+        a1[105] = './images/4026.jpg';
+        a2[105] = './images2/4026.jpg';
+        a1[106] = './images/4027.jpg';
+        a2[106] = './images2/4027.jpg';
+        
+        function cngImage(num) {
+            
+            var image01 = document.getElementById("mapImage");
+            var image02 = document.getElementById("chartImage");
+            
+            image01.src = a1[num];
+            image02.src = a2[num];
+        }
+    </SCRIPT>
+    <STYLE type=text/css>
+        A:link {
+            color: blue
+        }
+        
+        A:active {
+            color: blue
+        }
+        
+        A:visited {
+            color: blue
+        }
+        
+        A:hover {
+            color: red
+        }
+    </STYLE>
+</HEAD>
+
+<BODY>
+    <div>
+        <div id="mapComp" style="display:block; margin:0 auto; position:relative; left:0px; width:61%; height:100%">
+            <div style="position:absolute">
+                <img src='./images/36.jpg' id="mapImage" name='img01' style="width:100%; opacity: 0.9" USEMAP="#mapdata">
+            </div>
+            <div style="position:absolute">
+                <img src='./images/metroline.png' style="width:100%; opacity: 0.8" USEMAP="#mapdata">
+            </div>
+        </div>
+<!--
+        <div style="display:inline-block; position:relative; left:0px; width:36%; height:100%">
+            <div style="position:absolute; top:112px">
+                <img src='./images2/36.jpg' id="chartImage" name='img02' style="width:100%; opacity: 1.0">
+            </div>
+-->
+        </div>
+    </div>
+
+    <MAP NAME=mapdata id="imageMap">
+        <AREA onMouseOver="cngImage(0)" SHAPE="circle" COORDS="330,520,6">
+        <AREA onMouseOver="cngImage(1)" SHAPE="circle" COORDS="340,506,6">
+        <AREA onMouseOver="cngImage(2)" SHAPE="circle" COORDS="366,517,6">
+        <AREA onMouseOver="cngImage(3)" SHAPE="circle" COORDS="353,498,6">
+        <AREA onMouseOver="cngImage(4)" SHAPE="circle" COORDS="398,340,6">
+        <AREA onMouseOver="cngImage(5)" SHAPE="circle" COORDS="405,316,6">
+        <AREA onMouseOver="cngImage(6)" SHAPE="circle" COORDS="398,316,6">
+        <AREA onMouseOver="cngImage(7)" SHAPE="circle" COORDS="397,311,6">
+        <AREA onMouseOver="cngImage(8)" SHAPE="circle" COORDS="360,299,6">
+        <AREA onMouseOver="cngImage(9)" SHAPE="circle" COORDS="378,301,6">
+        <AREA onMouseOver="cngImage(10)" SHAPE="circle" COORDS="385,278,6">
+        <AREA onMouseOver="cngImage(11)" SHAPE="circle" COORDS="596,470,6">
+        <AREA onMouseOver="cngImage(12)" SHAPE="circle" COORDS="544,454,6">
+        <AREA onMouseOver="cngImage(13)" SHAPE="circle" COORDS="548,466,6">
+        <AREA onMouseOver="cngImage(14)" SHAPE="circle" COORDS="354,435,6">
+        <AREA onMouseOver="cngImage(15)" SHAPE="circle" COORDS="324,441,6">
+        <AREA onMouseOver="cngImage(16)" SHAPE="circle" COORDS="276,439,6">
+        <AREA onMouseOver="cngImage(17)" SHAPE="circle" COORDS="261,448,6">
+        <AREA onMouseOver="cngImage(18)" SHAPE="circle" COORDS="261,436,6">
+        <AREA onMouseOver="cngImage(19)" SHAPE="circle" COORDS="259,449,6">
+        <AREA onMouseOver="cngImage(20)" SHAPE="circle" COORDS="387,514,6">
+        <AREA onMouseOver="cngImage(21)" SHAPE="circle" COORDS="430,330,6">
+        <AREA onMouseOver="cngImage(22)" SHAPE="circle" COORDS="425,331,6">
+        <AREA onMouseOver="cngImage(23)" SHAPE="circle" COORDS="429,310,6">
+        <AREA onMouseOver="cngImage(24)" SHAPE="circle" COORDS="378,234,6">
+        <AREA onMouseOver="cngImage(25)" SHAPE="circle" COORDS="403,457,6">
+        <AREA onMouseOver="cngImage(26)" SHAPE="circle" COORDS="443,392,6">
+        <AREA onMouseOver="cngImage(27)" SHAPE="circle" COORDS="294,561,6">
+        <AREA onMouseOver="cngImage(28)" SHAPE="circle" COORDS="346,551,6">
+        <AREA onMouseOver="cngImage(29)" SHAPE="circle" COORDS="310,545,6">
+        <AREA onMouseOver="cngImage(30)" SHAPE="circle" COORDS="296,581,6">
+        <AREA onMouseOver="cngImage(31)" SHAPE="circle" COORDS="330,561,6">
+        <AREA onMouseOver="cngImage(32)" SHAPE="circle" COORDS="332,608,6">
+        <AREA onMouseOver="cngImage(33)" SHAPE="circle" COORDS="404,608,6">
+        <AREA onMouseOver="cngImage(34)" SHAPE="circle" COORDS="354,637,6">
+        <AREA onMouseOver="cngImage(35)" SHAPE="circle" COORDS="342,623,6">
+        <AREA onMouseOver="cngImage(36)" SHAPE="circle" COORDS="502,310,6">
+        <AREA onMouseOver="cngImage(37)" SHAPE="circle" COORDS="506,313,6">
+        <AREA onMouseOver="cngImage(38)" SHAPE="circle" COORDS="517,326,6">
+        <AREA onMouseOver="cngImage(39)" SHAPE="circle" COORDS="550,336,6">
+        <AREA onMouseOver="cngImage(40)" SHAPE="circle" COORDS="509,379,6">
+        <AREA onMouseOver="cngImage(41)" SHAPE="circle" COORDS="528,389,6">
+        <AREA onMouseOver="cngImage(42)" SHAPE="circle" COORDS="506,401,6">
+        <AREA onMouseOver="cngImage(43)" SHAPE="circle" COORDS="460,430,6">
+        <AREA onMouseOver="cngImage(44)" SHAPE="circle" COORDS="447,459,6">
+        <AREA onMouseOver="cngImage(45)" SHAPE="circle" COORDS="436,507,6">
+        <AREA onMouseOver="cngImage(46)" SHAPE="circle" COORDS="363,366,6">
+        <AREA onMouseOver="cngImage(47)" SHAPE="circle" COORDS="357,322,6">
+        <AREA onMouseOver="cngImage(48)" SHAPE="circle" COORDS="338,335,6">
+        <AREA onMouseOver="cngImage(49)" SHAPE="circle" COORDS="326,302,6">
+        <AREA onMouseOver="cngImage(50)" SHAPE="circle" COORDS="327,291,6">
+        <AREA onMouseOver="cngImage(51)" SHAPE="circle" COORDS="324,264,6">
+        <AREA onMouseOver="cngImage(52)" SHAPE="circle" COORDS="413,605,6">
+        <AREA onMouseOver="cngImage(53)" SHAPE="circle" COORDS="438,575,6">
+        <AREA onMouseOver="cngImage(54)" SHAPE="circle" COORDS="430,558,6">
+        <AREA onMouseOver="cngImage(55)" SHAPE="circle" COORDS="426,483,6">
+        <AREA onMouseOver="cngImage(56)" SHAPE="circle" COORDS="434,377,6">
+        <AREA onMouseOver="cngImage(57)" SHAPE="circle" COORDS="457,368,6">
+        <AREA onMouseOver="cngImage(58)" SHAPE="circle" COORDS="465,367,6">
+        <AREA onMouseOver="cngImage(59)" SHAPE="circle" COORDS="472,345,6">
+        <AREA onMouseOver="cngImage(60)" SHAPE="circle" COORDS="470,330,6">
+        <AREA onMouseOver="cngImage(61)" SHAPE="circle" COORDS="465,327,6">
+        <AREA onMouseOver="cngImage(62)" SHAPE="circle" COORDS="485,426,6">
+        <AREA onMouseOver="cngImage(63)" SHAPE="circle" COORDS="372,476,6">
+        <AREA onMouseOver="cngImage(64)" SHAPE="circle" COORDS="337,492,6">
+        <AREA onMouseOver="cngImage(65)" SHAPE="circle" COORDS="272,490,6">
+        <AREA onMouseOver="cngImage(66)" SHAPE="circle" COORDS="298,529,6">
+        <AREA onMouseOver="cngImage(67)" SHAPE="circle" COORDS="280,501,6">
+        <AREA onMouseOver="cngImage(68)" SHAPE="circle" COORDS="282,521,6">
+        <AREA onMouseOver="cngImage(69)" SHAPE="circle" COORDS="238,535,6">
+        <AREA onMouseOver="cngImage(70)" SHAPE="circle" COORDS="245,531,6">
+        <AREA onMouseOver="cngImage(71)" SHAPE="circle" COORDS="158,539,6">
+        <AREA onMouseOver="cngImage(72)" SHAPE="circle" COORDS="216,535,6">
+        <AREA onMouseOver="cngImage(73)" SHAPE="circle" COORDS="203,591,6">
+        <AREA onMouseOver="cngImage(74)" SHAPE="circle" COORDS="185,615,6">
+        <AREA onMouseOver="cngImage(75)" SHAPE="circle" COORDS="195,629,6">
+        <AREA onMouseOver="cngImage(76)" SHAPE="circle" COORDS="212,624,6">
+        <AREA onMouseOver="cngImage(77)" SHAPE="circle" COORDS="203,630,6">
+        <AREA onMouseOver="cngImage(78)" SHAPE="circle" COORDS="204,652,6">
+        <AREA onMouseOver="cngImage(79)" SHAPE="circle" COORDS="360,464,6">
+        <AREA onMouseOver="cngImage(80)" SHAPE="circle" COORDS="344,446,6">
+        <AREA onMouseOver="cngImage(81)" SHAPE="circle" COORDS="533,508,6">
+        <AREA onMouseOver="cngImage(82)" SHAPE="circle" COORDS="504,516,6">
+        <AREA onMouseOver="cngImage(83)" SHAPE="circle" COORDS="455,508,6">
+        <AREA onMouseOver="cngImage(84)" SHAPE="circle" COORDS="377,417,6">
+        <AREA onMouseOver="cngImage(85)" SHAPE="circle" COORDS="357,410,6">
+        <AREA onMouseOver="cngImage(86)" SHAPE="circle" COORDS="341,396,6">
+        <AREA onMouseOver="cngImage(87)" SHAPE="circle" COORDS="315,364,6">
+        <AREA onMouseOver="cngImage(88)" SHAPE="circle" COORDS="278,360,6">
+        <AREA onMouseOver="cngImage(89)" SHAPE="circle" COORDS="276,363,6">
+        <AREA onMouseOver="cngImage(90)" SHAPE="circle" COORDS="285,339,6">
+        <AREA onMouseOver="cngImage(91)" SHAPE="circle" COORDS="263,323,6">
+        <AREA onMouseOver="cngImage(92)" SHAPE="circle" COORDS="243,323,6">
+        <AREA onMouseOver="cngImage(93)" SHAPE="circle" COORDS="222,274,6">
+        <AREA onMouseOver="cngImage(94)" SHAPE="circle" COORDS="231,258,6">
+        <AREA onMouseOver="cngImage(95)" SHAPE="circle" COORDS="523,377,6">
+        <AREA onMouseOver="cngImage(96)" SHAPE="circle" COORDS="539,359,6">
+        <AREA onMouseOver="cngImage(97)" SHAPE="circle" COORDS="570,383,6">
+        <AREA onMouseOver="cngImage(98)" SHAPE="circle" COORDS="290,404,6">
+        <AREA onMouseOver="cngImage(99)" SHAPE="circle" COORDS="281,407,6">
+        <AREA onMouseOver="cngImage(100)" SHAPE="circle" COORDS="293,429,6">
+        <AREA onMouseOver="cngImage(101)" SHAPE="circle" COORDS="293,422,6">
+        <AREA onMouseOver="cngImage(102)" SHAPE="circle" COORDS="347,409,6">
+        <AREA onMouseOver="cngImage(103)" SHAPE="circle" COORDS="508,558,6">
+        <AREA onMouseOver="cngImage(104)" SHAPE="circle" COORDS="522,532,6">
+        <AREA onMouseOver="cngImage(105)" SHAPE="circle" COORDS="514,530,6">
+        <AREA onMouseOver="cngImage(106)" SHAPE="circle" COORDS="505,539,6">
+
+    </MAP>
+
+    <SCRIPT>
+        var map = document.getElementById("imageMap");
+
+        var element = map.children;
+        var itemNumber = element.length;
+        for (var i = 0; i < itemNumber; i++) {
+            var oldCoords = element[i].coords;
+            var newCoords = adjustPosition(oldCoords);
+            element[i].setAttribute("coords", newCoords);
+        }
+
+        function adjustPosition(position) {
+            var ele = document.getElementById("mapComp");
+            var divArray = ele.children;
+            for(var i = 0; i < divArray.length; i ++) {
+                divArray[i].style.width = ele.offsetWidth.toString() + "px";
+            }            
+            
+            var rate = document.getElementById("mapImage").width / 800;
+            var each = position.split(",");
+            //获取每个坐标点  
+            var i = 0;
+            each[i] = Math.round(parseInt(each[i]) * rate).toString(); //x坐标  
+            each[i + 1] = Math.round(parseInt(each[i + 1]) * rate).toString(); //y坐标  
+            //生成新的坐标点  
+            var newPosition = "";
+            for (var i = 0; i < 3; i++) {
+                newPosition += each[i];
+                if (i < 2) {
+                    newPosition += ",";
+                }
+            }
+            return newPosition;
+        }
+    </SCRIPT>
+</BODY>
+
+</HTML>
